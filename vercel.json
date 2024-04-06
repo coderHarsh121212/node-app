@@ -23,7 +23,7 @@
       "dest": "build/index.html"
     },
     {
-      "src": "/ks",
+      "src": "/",
       "dest": "build/index.html"
     },
     {
