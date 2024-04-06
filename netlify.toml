@@ -1,9 +1,24 @@
 
-
-[build.environment]
-  NODE_ENV = "production"  # Set Node.js environment to production
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+    "routes": [
+      {
+        "src": "/products",
+        "dest": "index.js"
+      },
+      {
+        "src": "/products/(.*)",
+        "dest": "index.js"
+      },
+      {
+        "src": "/add",
+        "dest": "build/index.html"
+      },
+      {
+        "src": "/",
+        "dest": "build/index.html"
+      },
+      {
+        "src": "/(.+)",
+        "dest": "build/$1"
+      }
+    ]
+  }
